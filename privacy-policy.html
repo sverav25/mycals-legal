@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +78,11 @@
       font-size: 15px;
     }
 
+    a {
+      color: #111111;
+      font-weight: 700;
+    }
+
     .contact {
       font-weight: 800;
       color: #111111;
@@ -99,7 +103,7 @@
 
     <section class="card">
       <h1>Privacy Policy</h1>
-      <div class="date">Last updated: May 8, 2026</div>
+      <div class="date">Last updated: May 11, 2026</div>
 
       <p>
         This Privacy Policy explains how MyCals collects, uses, stores, and
@@ -107,7 +111,14 @@
       </p>
 
       <p>
-        By using MyCals, you agree to the collection and use of information
+        MyCals is operated by Sven Ravnjak. If you have questions about this
+        Privacy Policy or your personal data, you can contact us at:
+      </p>
+
+      <p class="contact">Email: sverav2@gmail.com</p>
+
+      <p>
+        By using MyCals, you acknowledge that we collect and use information as
         described in this Privacy Policy.
       </p>
 
@@ -117,7 +128,7 @@
       <h3>Account Information</h3>
       <p>
         When you create an account or sign in, we may collect information such
-        as your email address and user ID.
+        as your email address, authentication provider information, and user ID.
       </p>
 
       <h3>Profile Information</h3>
@@ -132,6 +143,7 @@
         <li>Nutrition goal</li>
         <li>Target weight</li>
         <li>Avatar/profile image</li>
+        <li>Unit preferences, such as weight, height, and water units</li>
       </ul>
 
       <h3>Nutrition and Health-Related Tracking Data</h3>
@@ -148,7 +160,7 @@
         <li>Water intake</li>
         <li>Weight logs</li>
         <li>Fasting or streak-related progress</li>
-        <li>Nutrition and water goals</li>
+        <li>Nutrition, macro, water, and weight goals</li>
       </ul>
 
       <h3>Image and Barcode Logging Data</h3>
@@ -164,32 +176,43 @@
       </ul>
 
       <p>
-        Image meal logging may use external services to analyze food images and
-        generate nutrition estimates.
+        When you use image meal logging, your food image and related request
+        data may be sent to an external AI service, such as Google Gemini, to
+        identify food items, estimate portions, and generate nutrition
+        estimates.
       </p>
 
       <h3>Subscription Information</h3>
       <p>
-        If you purchase MyCals Premium, subscription status and purchase
-        information may be processed through RevenueCat and the Apple App Store.
+        If you purchase MyCals Premium, subscription status, entitlement status,
+        and purchase-related information may be processed through RevenueCat and
+        the Apple App Store.
       </p>
 
       <p>
         We do not directly collect or store your full payment card details.
       </p>
 
-      <h3>Device and Usage Information</h3>
+      <h3>Device, Usage, and Diagnostic Information</h3>
       <p>
-        We may collect limited technical information needed to operate and
-        improve the app, such as:
+        We may collect limited technical information needed to operate, secure,
+        and improve the app, such as:
       </p>
       <ul>
         <li>App usage events</li>
         <li>Device type</li>
         <li>Error logs</li>
-        <li>App performance information</li>
+        <li>Crash or performance information</li>
+        <li>App launch and interaction information</li>
         <li>Notification preferences</li>
       </ul>
+
+      <h3>Support Information</h3>
+      <p>
+        If you contact us for support, we may collect the information you
+        provide in your message, such as your email address, account details,
+        and the content of your support request.
+      </p>
 
       <h2>2. How We Use Your Information</h2>
       <p>We use your information to:</p>
@@ -199,14 +222,41 @@
         <li>Personalize calorie, macro, and water recommendations</li>
         <li>Provide barcode, search, and image meal logging functionality</li>
         <li>Manage saved meals and history</li>
-        <li>Provide Premium subscription access</li>
+        <li>Provide MyCals Premium subscription access</li>
         <li>Improve app performance and user experience</li>
         <li>Send reminders or notifications if enabled</li>
         <li>Respond to support requests</li>
-        <li>Detect and fix bugs or technical issues</li>
+        <li>Detect, prevent, and fix bugs, abuse, or technical issues</li>
+        <li>Comply with legal, tax, accounting, and regulatory obligations</li>
       </ul>
 
-      <h2>3. Subscriptions and Payments</h2>
+      <h2>3. Legal Basis for Processing</h2>
+      <p>
+        If you are located in the European Economic Area, United Kingdom, or a
+        region with similar data protection laws, we process your personal
+        information based on one or more of the following legal bases:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Performance of a contract:</strong> to provide the app,
+          account, tracking, subscription, and core features.
+        </li>
+        <li>
+          <strong>Consent:</strong> for optional features such as notifications,
+          camera/photo access, and certain personalization features.
+        </li>
+        <li>
+          <strong>Legitimate interests:</strong> to improve the app, maintain
+          security, prevent abuse, and fix technical issues.
+        </li>
+        <li>
+          <strong>Legal obligations:</strong> to comply with tax, accounting,
+          payment, and legal requirements.
+        </li>
+      </ul>
+
+      <h2>4. Subscriptions and Payments</h2>
       <p>
         MyCals Premium subscriptions are processed through the Apple App Store
         and managed using RevenueCat.
@@ -226,7 +276,7 @@
         according to Apple’s App Store policies.
       </p>
 
-      <h2>4. Third-Party Services</h2>
+      <h2>5. Third-Party Services</h2>
       <p>
         MyCals may use third-party services to operate core features. These may
         include:
@@ -235,17 +285,20 @@
       <h3>Supabase</h3>
       <p>
         Used for authentication, database storage, user profiles, meals, goals,
-        logs, and related app data.
+        logs, image storage, and related app data.
       </p>
 
       <h3>RevenueCat</h3>
       <p>
         Used for subscription management, entitlement checking, purchase status,
-        and restoring purchases.
+        paywall display, and restoring purchases.
       </p>
 
       <h3>Apple App Store</h3>
-      <p>Used for processing iOS subscriptions and payments.</p>
+      <p>
+        Used for processing iOS subscriptions, payments, subscription
+        management, and refunds.
+      </p>
 
       <h3>Nutrition and Food Data Services</h3>
       <p>
@@ -253,16 +306,32 @@
         estimate nutrition values.
       </p>
 
-      <h3>Image Processing or AI Services</h3>
+      <h3>Google Gemini or Other Image Processing / AI Services</h3>
       <p>
-        Used when you choose to use image meal logging. Images may be processed
-        to estimate food items, ingredients, and nutrition values.
+        Used when you choose to use image meal logging. Images and related
+        request data may be processed to estimate food items, ingredients,
+        portions, and nutrition values.
       </p>
 
-      <h2>5. How We Store Your Information</h2>
       <p>
-        Your information may be stored securely using cloud database and storage
-        services.
+        These third-party services may process information according to their
+        own privacy policies and terms.
+      </p>
+
+      <h2>6. Tracking and Advertising</h2>
+      <p>
+        MyCals does not sell your personal information. MyCals does not use your
+        personal information for third-party advertising tracking.
+      </p>
+
+      <p>
+        MyCals does not display third-party advertisements.
+      </p>
+
+      <h2>7. How We Store Your Information</h2>
+      <p>
+        Your information may be stored securely using cloud database, storage,
+        authentication, and subscription management services.
       </p>
 
       <p>
@@ -270,11 +339,11 @@
         transmission or storage is completely secure.
       </p>
 
-      <h2>6. Data Retention</h2>
+      <h2>8. Data Retention</h2>
       <p>
         We keep your information for as long as needed to provide the app’s
         features, maintain your account, comply with legal obligations, resolve
-        disputes, and improve the service.
+        disputes, prevent fraud or abuse, and improve the service.
       </p>
 
       <p>
@@ -284,21 +353,40 @@
 
       <p class="contact">Email: sverav2@gmail.com</p>
 
-      <h2>7. Your Choices</h2>
+      <p>
+        We will process deletion requests within a reasonable period, unless we
+        need to retain certain information to comply with legal obligations,
+        resolve disputes, prevent fraud, or enforce agreements.
+      </p>
+
+      <h2>9. Your Choices and Rights</h2>
       <p>You can:</p>
       <ul>
         <li>Update certain profile information in the app</li>
-        <li>Change your nutrition, water, and weight goals</li>
-        <li>Delete or edit saved meals where supported</li>
+        <li>Change your nutrition, water, weight, and unit preferences</li>
+        <li>Delete or edit meals and saved meals where supported</li>
         <li>Manage notifications through app settings or your device settings</li>
         <li>Manage subscriptions through your Apple ID settings</li>
         <li>Request account or data deletion by contacting support</li>
       </ul>
 
-      <h2>8. Notifications</h2>
+      <p>
+        Depending on your location, you may have the right to request access,
+        correction, deletion, restriction, objection, or portability of your
+        personal data. You may also withdraw consent where processing is based
+        on consent.
+      </p>
+
+      <p>
+        To exercise these rights, contact us at:
+      </p>
+
+      <p class="contact">Email: sverav2@gmail.com</p>
+
+      <h2>10. Notifications</h2>
       <p>
         If you enable notifications, MyCals may send reminders related to meals,
-        water intake, weigh-ins, or custom reminders.
+        water intake, weigh-ins, end-of-day progress, or custom reminders.
       </p>
 
       <p>
@@ -306,7 +394,7 @@
         settings where available.
       </p>
 
-      <h2>9. Children’s Privacy</h2>
+      <h2>11. Children’s Privacy</h2>
       <p>
         MyCals is not intended for children under the age of 13.
       </p>
@@ -317,7 +405,7 @@
         us so we can delete it.
       </p>
 
-      <h2>10. Health and Nutrition Disclaimer</h2>
+      <h2>12. Health and Nutrition Disclaimer</h2>
       <p>
         MyCals provides nutrition and wellness tracking tools for informational
         purposes only.
@@ -326,7 +414,8 @@
       <p>
         MyCals does not provide medical advice, diagnosis, or treatment.
         Nutrition values, calorie targets, macro goals, image recognition
-        results, and food data may be estimates and may not always be accurate.
+        results, barcode results, and food data may be estimates and may not
+        always be accurate.
       </p>
 
       <p>
@@ -334,14 +423,14 @@
         significant changes to your diet, health, or fitness routine.
       </p>
 
-      <h2>11. International Users</h2>
+      <h2>13. International Users</h2>
       <p>
         Your information may be processed and stored in countries outside your
-        country of residence. By using MyCals, you agree that your information
-        may be transferred and processed in those locations.
+        country of residence. By using MyCals, you acknowledge that your
+        information may be transferred and processed in those locations.
       </p>
 
-      <h2>12. Changes to This Privacy Policy</h2>
+      <h2>14. Changes to This Privacy Policy</h2>
       <p>
         We may update this Privacy Policy from time to time.
       </p>
@@ -351,7 +440,7 @@
         this policy.
       </p>
 
-      <h2>13. Contact Us</h2>
+      <h2>15. Contact Us</h2>
       <p>
         If you have any questions about this Privacy Policy or want to request
         data deletion, contact us at:
